@@ -19,7 +19,6 @@ state_no_zzp["☠ NO ZZP"]
 klant_rabobank["Rabobank"]
 klant_ns["NS"]
 klant_tennet["TenneT"]
-
 klant_rabobank["Rabobank"]
 klant_ministerie_van_defensie["Ministerie van Defensie"]
 klant_sociale_verzekeringsbank["Sociale Verzekeringsbank"]
@@ -42,6 +41,7 @@ klant_hr_ministerie_van_infrastructuur_en_waterstaat["HR - Ministerie van Infras
 klant_hr_rijkswaterstaat["HR - Rijkswaterstaat"]
 klant_umc_utrecht["UMC Utrecht"]
 klant_belastingdienst_non_ict["Belastingdienst Non-ICT"]
+klant_unilever["Unilever"]
 
 boker_magnit([Magnit])
 
@@ -52,6 +52,9 @@ click das_ns "https://inhuur-ns.my.site.com/" "https://inhuur-ns.my.site.com/"
 
 das_magnit(("Magnit portal"))
 click das_ns "https://portal.magnitglobal.com/" "https://portal.magnitglobal.com/"
+
+das_unilever_talentpool(("Unilever freelancers talent-pool"))
+click das_unilever_talentpool "https://unileverfreelancers.talent-pool.com/" "https://unileverfreelancers.talent-pool.com/"
 
 
 klant_rabobank --> state_no_zzp
@@ -84,6 +87,7 @@ klant_hr_rijkswaterstaat --> das_headfirst_select
 klant_umc_utrecht --> das_headfirst_select
 klant_belastingdienst_non_ict --> das_headfirst_select
 
+klant_unilever --> das_unilever_talentpool
 
 ```
 
