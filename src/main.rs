@@ -1,15 +1,17 @@
-use tera::{Tera, Context};
+use chrono::Local;
+use std::fs;
 use std::fs::File;
 use std::io::{self, BufRead};
-use std::fs;
 use std::path::Path;
-
+use tera::{Context, Tera};
 
 // Render templates in templates using tera
 fn render_template(diagram: String) {
-    let mut tera = Tera::new("templates/**/*").unwrap();
+    let tera = Tera::new("templates/**/*").unwrap();
     let mut context = Context::new();
+    let updated_date = Local::now().format("%Y-%m-%d").to_string();
     context.insert("diagram", &diagram);
+    context.insert("updated_date", &updated_date);
     let rendered = tera.render("index.html", &context).unwrap();
 
     if !Path::new("public").exists() {
@@ -42,9 +44,8 @@ fn cleanup_diagram() {
     let mut lines: Vec<String> = reader.lines().map(|line| line.unwrap()).collect();
     // Find blocks of lines starting with `klant_`
     let mut klant_blocks: Vec<(usize, usize)> = Vec::new();
-    let mut block_start_idx: Option<usize>= None;
+    let mut block_start_idx: Option<usize> = None;
     for (idx, line) in lines.clone().iter().enumerate() {
-
         if line.starts_with("klant_") {
             if block_start_idx.is_none() {
                 block_start_idx = Some(idx);
