@@ -1,6 +1,7 @@
 ```mermaid
 flowchart LR
 state_no_zzp["☠ NO ZZP"]
+
 klant_rabobank["Rabobank"]
 klant_ns["NS"]
 klant_tennet["TenneT"]
@@ -33,11 +34,12 @@ broker_magnit(["Magnit"])
 
 das_headfirst_select((Headfirst Select))
 click das_headfirst "https://platform.select.hr/" "https://platform.select.hr/"
+
 das_ns(("Inhuur NS"))
 click das_ns "https://inhuur-ns.my.site.com/" "https://inhuur-ns.my.site.com/"
 
 das_magnit(("Magnit portal"))
-click das_ns "https://portal.magnitglobal.com/" "https://portal.magnitglobal.com/"
+click das_magnit "https://portal.magnitglobal.com/" "https://portal.magnitglobal.com/"
 
 das_unilever_talentpool(("Unilever freelancers talent-pool"))
 click das_unilever_talentpool "https://unileverfreelancers.talent-pool.com/" "https://unileverfreelancers.talent-pool.com/"
@@ -45,13 +47,11 @@ click das_unilever_talentpool "https://unileverfreelancers.talent-pool.com/" "ht
 das_human("🫂 Direct netwerken")
 
 
+
 klant_rabobank --> state_no_zzp
-klant_rabobank --> broker_magnit --> das_magnit
-
+klant_rabobank --> broker_magnit
 klant_ns --> das_ns
-
-klant_tennet --> broker_magnit --> das_magnit
-
+klant_tennet --> broker_magnit
 klant_rabobank --> das_headfirst_select
 klant_ministerie_van_defensie --> das_headfirst_select
 klant_sociale_verzekeringsbank --> das_headfirst_select
@@ -74,7 +74,9 @@ klant_hr_ministerie_van_infrastructuur_en_waterstaat --> das_headfirst_select
 klant_hr_rijkswaterstaat --> das_headfirst_select
 klant_umc_utrecht --> das_headfirst_select
 klant_belastingdienst_non_ict --> das_headfirst_select
-
 klant_unilever --> das_unilever_talentpool
 klant_dpg_media --> das_human
+
+broker_magnit --> das_magnit
+
 ```
