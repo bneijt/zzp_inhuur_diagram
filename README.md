@@ -15,7 +15,7 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    state_no_zzp["fa:fa-cross NO ZZP"]
+    state_no_zzp["☠ NO ZZP"]
     klant_rabobank["Rabobank"]
     klant_ns["NS"]
 
