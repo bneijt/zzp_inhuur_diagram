@@ -42,6 +42,7 @@ klant_hr_rijkswaterstaat["HR - Rijkswaterstaat"]
 klant_umc_utrecht["UMC Utrecht"]
 klant_belastingdienst_non_ict["Belastingdienst Non-ICT"]
 klant_unilever["Unilever"]
+klant_dpg_media["DPG Media"]
 
 boker_magnit([Magnit])
 
@@ -55,6 +56,8 @@ click das_ns "https://portal.magnitglobal.com/" "https://portal.magnitglobal.com
 
 das_unilever_talentpool(("Unilever freelancers talent-pool"))
 click das_unilever_talentpool "https://unileverfreelancers.talent-pool.com/" "https://unileverfreelancers.talent-pool.com/"
+
+das_human("🫂 Direct met netwerken en kennisen")
 
 
 klant_rabobank --> state_no_zzp
@@ -88,6 +91,6 @@ klant_umc_utrecht --> das_headfirst_select
 klant_belastingdienst_non_ict --> das_headfirst_select
 
 klant_unilever --> das_unilever_talentpool
-
+klant_dpg_media --> das_human
 ```
 
