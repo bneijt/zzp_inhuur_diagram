@@ -17,6 +17,7 @@ klant_ministerie_van_defensie["Ministerie van Defensie"]
 klant_ministerie_van_infrastructuur_en_waterstaat["Ministerie van Infrastructuur en Waterstaat"]
 klant_ministerie_van_volksgezondheid,_welzijn_en_sport["Ministerie van Volksgezondheid, Welzijn en Sport"]
 klant_ndw["NDW"]
+klant_npo["NPO"]
 klant_ns["NS"]
 klant_pgb_pensioendiensten["PGB Pensioendiensten"]
 klant_pggm["PGGM"]
@@ -33,19 +34,11 @@ klant_unilever["Unilever"]
 broker_magnit(["Magnit"])
 
 das_headfirst_select((Headfirst Select))
-click das_headfirst "https://platform.select.hr/" "https://platform.select.hr/"
-
 das_ns(("Inhuur NS"))
-click das_ns "https://inhuur-ns.my.site.com/" "https://inhuur-ns.my.site.com/"
-
 das_magnit(("Magnit portal"))
-click das_magnit "https://portal.magnitglobal.com/" "https://portal.magnitglobal.com/"
-
-das_unilever_talentpool(("Unilever freelancers talent-pool"))
-click das_unilever_talentpool "https://unileverfreelancers.talent-pool.com/" "https://unileverfreelancers.talent-pool.com/"
-
 das_human("🫂 Direct netwerken")
-
+das_unilever_talentpool(("Unilever freelancers talent-pool"))
+das_negometrix(("Negometrix 3"))
 
 
 klant_belastingdienst_ict --> das_headfirst_select
@@ -63,6 +56,7 @@ klant_ministerie_van_defensie --> das_headfirst_select
 klant_ministerie_van_infrastructuur_en_waterstaat --> das_headfirst_select
 klant_ministerie_van_volksgezondheid,_welzijn_en_sport --> das_headfirst_select
 klant_ndw --> das_headfirst_select
+klant_npo -- misschien --> das_negometrix
 klant_ns --> das_ns
 klant_pgb_pensioendiensten --> das_headfirst_select
 klant_pggm --> das_headfirst_select
@@ -79,4 +73,11 @@ klant_unilever --> das_unilever_talentpool
 
 broker_magnit --> das_magnit
 
+
+%% Links for nodes
+click das_headfirst "https://platform.select.hr/" "https://platform.select.hr/"
+click das_ns "https://inhuur-ns.my.site.com/" "https://inhuur-ns.my.site.com/"
+click das_negometrix "https://platform.negometrix.com/" "https://platform.negometrix.com/"
+click das_unilever_talentpool "https://unileverfreelancers.talent-pool.com/" "https://unileverfreelancers.talent-pool.com/"
+click das_magnit "https://portal.magnitglobal.com/" "https://portal.magnitglobal.com/"
 ```
