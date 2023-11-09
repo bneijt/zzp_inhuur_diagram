@@ -13,6 +13,7 @@ klant_dpg_media["DPG Media"]
 klant_hr_ministerie_van_infrastructuur_en_waterstaat["HR - Ministerie van Infrastructuur en Waterstaat"]
 klant_hr_rijkswaterstaat["HR - Rijkswaterstaat"]
 klant_koninklijk_nederlands_meteorologisch_instituut["Koninklijk Nederlands Meteorologisch Instituut"]
+klant_enexis["Enexis"]
 klant_ministerie_van_defensie["Ministerie van Defensie"]
 klant_ministerie_van_infrastructuur_en_waterstaat["Ministerie van Infrastructuur en Waterstaat"]
 klant_ministerie_van_volksgezondheid,_welzijn_en_sport["Ministerie van Volksgezondheid, Welzijn en Sport"]
@@ -31,6 +32,8 @@ klant_tennet["TenneT"]
 klant_umc_utrecht["UMC Utrecht"]
 klant_unilever["Unilever"]
 
+recruiter_citrus_it{{"Citrus IT"}}
+
 broker_magnit(["Magnit"])
 
 das_headfirst_select((Headfirst Select))
@@ -39,7 +42,7 @@ das_magnit(("Magnit portal"))
 das_negometrix(("Negometrix 3"))
 das_ns(("Inhuur NS"))
 das_unilever_talentpool(("Unilever freelancers talent-pool"))
-
+das_mercell(("Mercell"))
 
 klant_belastingdienst_ict --> das_headfirst_select
 klant_belastingdienst_non_ict --> das_headfirst_select
@@ -70,6 +73,7 @@ klant_stedin_netbeheer --> das_headfirst_select
 klant_tennet --> broker_magnit
 klant_umc_utrecht --> das_headfirst_select
 klant_unilever --> das_unilever_talentpool
+klant_enexis --> recruiter_citrus_it
 
 broker_magnit --> das_magnit
 
@@ -80,4 +84,9 @@ click das_magnit "https://portal.magnitglobal.com/" "https://portal.magnitglobal
 click das_negometrix "https://platform.negometrix.com/" "https://platform.negometrix.com/"
 click das_ns "https://inhuur-ns.my.site.com/" "https://inhuur-ns.my.site.com/"
 click das_unilever_talentpool "https://unileverfreelancers.talent-pool.com/" "https://unileverfreelancers.talent-pool.com/"
+click das_mercell "https://identity.s2c.mercell.com" "https://identity.s2c.mercell.com"
+
+click klant_npo "https://inhuurkaart.nl/detail-info/efd3c2dd/info/" "https://inhuurkaart.nl/detail-info/efd3c2dd/info/"
+click klant_npo "https://inhuurkaart.nl/detail-info/efd3c2dd/info/" "https://inhuurkaart.nl/detail-info/efd3c2dd/info/"
+
 ```
