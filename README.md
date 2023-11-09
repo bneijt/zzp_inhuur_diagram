@@ -1,6 +1,8 @@
 # zzp_inhuur_diagram
+
 Een diagram van de Nederlandse ZZP inhuur markt
 
+De volgende zijn de basis elementen van het diagram.
 ```mermaid
 flowchart LR
     klant["Klant"]
@@ -12,6 +14,8 @@ flowchart LR
     klant --> portal
     klant --> preferred
 ```
+
+
 
 ```mermaid
 flowchart LR
