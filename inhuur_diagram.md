@@ -34,11 +34,11 @@ klant_unilever["Unilever"]
 broker_magnit(["Magnit"])
 
 das_headfirst_select((Headfirst Select))
-das_ns(("Inhuur NS"))
-das_magnit(("Magnit portal"))
 das_human("🫂 Direct netwerken")
-das_unilever_talentpool(("Unilever freelancers talent-pool"))
+das_magnit(("Magnit portal"))
 das_negometrix(("Negometrix 3"))
+das_ns(("Inhuur NS"))
+das_unilever_talentpool(("Unilever freelancers talent-pool"))
 
 
 klant_belastingdienst_ict --> das_headfirst_select
@@ -76,8 +76,8 @@ broker_magnit --> das_magnit
 
 %% Links for nodes
 click das_headfirst "https://platform.select.hr/" "https://platform.select.hr/"
-click das_ns "https://inhuur-ns.my.site.com/" "https://inhuur-ns.my.site.com/"
-click das_negometrix "https://platform.negometrix.com/" "https://platform.negometrix.com/"
-click das_unilever_talentpool "https://unileverfreelancers.talent-pool.com/" "https://unileverfreelancers.talent-pool.com/"
 click das_magnit "https://portal.magnitglobal.com/" "https://portal.magnitglobal.com/"
+click das_negometrix "https://platform.negometrix.com/" "https://platform.negometrix.com/"
+click das_ns "https://inhuur-ns.my.site.com/" "https://inhuur-ns.my.site.com/"
+click das_unilever_talentpool "https://unileverfreelancers.talent-pool.com/" "https://unileverfreelancers.talent-pool.com/"
 ```

@@ -70,6 +70,8 @@ fn cleanup_diagram() {
     let mut lines: Vec<String> = reader.lines().map(|line| line.unwrap()).collect();
 
     lines = sort_prefix_block(lines, "klant_".to_string());
+    lines = sort_prefix_block(lines, "das_".to_string());
+    lines = sort_prefix_block(lines, "click ".to_string());
 
     // Write the lines back to the file
     fs::write("inhuur_diagram.md", lines.join("\n")).unwrap();
