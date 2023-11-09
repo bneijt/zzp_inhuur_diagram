@@ -29,7 +29,7 @@ klant_belastingdienst_non_ict["Belastingdienst Non-ICT"]
 klant_unilever["Unilever"]
 klant_dpg_media["DPG Media"]
 
-boker_magnit([Magnit])
+broker_magnit(["Magnit"])
 
 das_headfirst_select((Headfirst Select))
 click das_headfirst "https://platform.select.hr/" "https://platform.select.hr/"
@@ -42,11 +42,11 @@ click das_ns "https://portal.magnitglobal.com/" "https://portal.magnitglobal.com
 das_unilever_talentpool(("Unilever freelancers talent-pool"))
 click das_unilever_talentpool "https://unileverfreelancers.talent-pool.com/" "https://unileverfreelancers.talent-pool.com/"
 
-das_human("🫂 Direct met netwerken en kennisen")
+das_human("🫂 Direct netwerken")
 
 
 klant_rabobank --> state_no_zzp
-klant_rabobank --> boker_magnit --> das_magnit
+klant_rabobank --> broker_magnit --> das_magnit
 
 klant_ns --> das_ns
 
