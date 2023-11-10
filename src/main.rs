@@ -71,6 +71,7 @@ fn cleanup_diagram() {
 
     lines = sort_prefix_block(lines, "klant_".to_string());
     lines = sort_prefix_block(lines, "das_".to_string());
+    lines = sort_prefix_block(lines, "broker_ ".to_string());
     lines = sort_prefix_block(lines, "click ".to_string());
 
     // Write the lines back to the file
