@@ -14,6 +14,7 @@ klant_enexis["Enexis"]
 klant_hr_ministerie_van_infrastructuur_en_waterstaat["HR - Ministerie van Infrastructuur en Waterstaat"]
 klant_hr_rijkswaterstaat["HR - Rijkswaterstaat"]
 klant_koninklijk_nederlands_meteorologisch_instituut["Koninklijk Nederlands Meteorologisch Instituut"]
+klant_kpn["KPN"]
 klant_ministerie_van_defensie["Ministerie van Defensie"]
 klant_ministerie_van_infrastructuur_en_waterstaat["Ministerie van Infrastructuur en Waterstaat"]
 klant_ministerie_van_volksgezondheid,_welzijn_en_sport["Ministerie van Volksgezondheid, Welzijn en Sport"]
@@ -36,16 +37,18 @@ klant_vng_realisatie["VNG Realisatie"]
 
 recruiter_citrus_it{{"Citrus IT"}}
 
+broker_yacht(["Yacht"])
 broker_magnit(["Magnit"])
 broker_ctm_solution(["CTM solution"])
 
-das_freep{{"Freep.nl"}}
+das_freep(("Freep.nl"))
 das_headfirst_select((Headfirst Select))
 das_human("🫂 Direct netwerken")
 das_magnit(("Magnit portal"))
 das_mercell(("Mercell"))
 das_negometrix(("Negometrix 3"))
 das_ns(("Inhuur NS"))
+das_staffd((Staffd))
 das_unilever_talentpool(("Unilever freelancers talent-pool"))
 
 klant_belastingdienst_ict --> das_headfirst_select
@@ -60,6 +63,7 @@ klant_enexis --> recruiter_citrus_it
 klant_hr_ministerie_van_infrastructuur_en_waterstaat --> das_headfirst_select
 klant_hr_rijkswaterstaat --> das_headfirst_select
 klant_koninklijk_nederlands_meteorologisch_instituut --> das_headfirst_select
+klant_kpn --> das_staffd
 klant_ministerie_van_defensie --> das_headfirst_select
 klant_ministerie_van_infrastructuur_en_waterstaat --> das_headfirst_select
 klant_ministerie_van_volksgezondheid,_welzijn_en_sport --> das_headfirst_select
@@ -81,6 +85,7 @@ klant_umc_utrecht --> das_headfirst_select
 klant_unilever --> das_unilever_talentpool
 klant_vng_realisatie --> broker_ctm_solution --> das_freep
 broker_magnit --> das_magnit
+klant_kpn --> broker_yacht 
 
 
 %% Links for nodes
@@ -89,11 +94,14 @@ click das_magnit "https://portal.magnitglobal.com/" "https://portal.magnitglobal
 click das_mercell "https://identity.s2c.mercell.com" "https://identity.s2c.mercell.com"
 click das_negometrix "https://platform.negometrix.com/" "https://platform.negometrix.com/"
 click das_ns "https://inhuur-ns.my.site.com/" "https://inhuur-ns.my.site.com/"
+click das_staffd "https://www.staffd.co/" "https://www.staffd.co/"
 click das_unilever_talentpool "https://unileverfreelancers.talent-pool.com/" "https://unileverfreelancers.talent-pool.com/"
 
+click klant_kpn "https://vng.nl/" "https://vng.nl/"
 click klant_mobilis "https://www.mobilis.nl/" "https://www.mobilis.nl/"
 click klant_npo "https://inhuurkaart.nl/detail-info/efd3c2dd/info/" "https://inhuurkaart.nl/detail-info/efd3c2dd/info/"
 click klant_npo "https://inhuurkaart.nl/detail-info/efd3c2dd/info/" "https://inhuurkaart.nl/detail-info/efd3c2dd/info/"
 click klant_vng_realisatie "https://vng.nl/" "https://vng.nl/"
 
+click broker_yacht "https://www.yacht.nl/" "https://www.yacht.nl/"
 ```
