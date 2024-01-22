@@ -17,13 +17,14 @@ klant_koninklijk_nederlands_meteorologisch_instituut["Koninklijk Nederlands Mete
 klant_kpn["KPN"]
 klant_ministerie_van_defensie["Ministerie van Defensie"]
 klant_ministerie_van_infrastructuur_en_waterstaat["Ministerie van Infrastructuur en Waterstaat"]
-klant_ministerie_van_volksgezondheid,_welzijn_en_sport["Ministerie van Volksgezondheid, Welzijn en Sport"]
+klant_ministerie_van_volksgezondheid_welzijn_en_sport["Ministerie van Volksgezondheid, Welzijn en Sport"]
 klant_mobilis["Mobilis"]
 klant_ndw["NDW"]
 klant_npo["NPO"]
 klant_ns["NS"]
 klant_pgb_pensioendiensten["PGB Pensioendiensten"]
 klant_pggm["PGGM"]
+klant_provincie_zuid_holland["Provincie Zuid-Holland"]
 klant_rabobank["Rabobank"]
 klant_rabobank["Rabobank"]
 klant_rijksinstituut_voor_de_volksgezondheid_en_milieu["Rijksinstituut voor de Volksgezondheid en Milieu"]
@@ -36,72 +37,96 @@ klant_unilever["Unilever"]
 klant_vng_realisatie["VNG Realisatie"]
 
 recruiter_citrus_it{{"Citrus IT"}}
+recruiter_vibe_group{{"Vibe group"}}
 
 broker_yacht(["Yacht"])
+broker_js_consultancy(["JS Consultancy"])
 broker_magnit(["Magnit"])
 broker_ctm_solution(["CTM solution"])
+broker_headfirst(["Headfirst"])
 
+das_freelance_nl(("Freelance.nl"))
 das_freep(("Freep.nl"))
 das_headfirst_select((Headfirst Select))
 das_human("🫂 Direct netwerken")
 das_magnit(("Magnit portal"))
-das_mercell(("Mercell"))
 das_negometrix(("Negometrix 3"))
 das_ns(("Inhuur NS"))
+das_sentior((Sentior))
 das_staffd((Staffd))
 das_unilever_talentpool(("Unilever freelancers talent-pool"))
 
-klant_belastingdienst_ict --> das_headfirst_select
-klant_belastingdienst_non_ict --> das_headfirst_select
-klant_capgemini_nederland_ --> das_headfirst_select
-klant_cegeka_nederland --> das_headfirst_select
-klant_ciz --> das_headfirst_select
-klant_college_ter_beoordeling_van_geneesmiddelen --> das_headfirst_select
-klant_dienst_justitiële_inrichtingen --> das_headfirst_select
+%% Edges: we werken van klant de diepte in.
+klant_belastingdienst_ict --> broker_headfirst
+klant_belastingdienst_non_ict --> broker_headfirst
+klant_capgemini_nederland_ --> broker_headfirst
+klant_cegeka_nederland --> broker_headfirst
+klant_ciz --> broker_headfirst
+klant_college_ter_beoordeling_van_geneesmiddelen --> broker_headfirst
+klant_dienst_justitiële_inrichtingen --> broker_headfirst
 klant_dpg_media --> das_human
 klant_enexis --> recruiter_citrus_it
-klant_hr_ministerie_van_infrastructuur_en_waterstaat --> das_headfirst_select
-klant_hr_rijkswaterstaat --> das_headfirst_select
-klant_koninklijk_nederlands_meteorologisch_instituut --> das_headfirst_select
+klant_enexis --> recruiter_vibe_group
+klant_hr_ministerie_van_infrastructuur_en_waterstaat --> broker_headfirst
+klant_hr_rijkswaterstaat --> broker_headfirst
+klant_koninklijk_nederlands_meteorologisch_instituut --> broker_headfirst
+klant_kpn --> broker_yacht
 klant_kpn --> das_staffd
-klant_ministerie_van_defensie --> das_headfirst_select
-klant_ministerie_van_infrastructuur_en_waterstaat --> das_headfirst_select
-klant_ministerie_van_volksgezondheid,_welzijn_en_sport --> das_headfirst_select
-klant_mobilis --> das_magnit
-klant_ndw --> das_headfirst_select
+klant_ministerie_van_defensie --> broker_headfirst
+klant_ministerie_van_infrastructuur_en_waterstaat --> broker_headfirst
+klant_ministerie_van_volksgezondheid_welzijn_en_sport --> broker_headfirst
+klant_mobilis --> broker_magnit
+klant_ndw --> broker_headfirst
 klant_npo -- misschien --> das_negometrix
 klant_ns --> das_ns
-klant_pgb_pensioendiensten --> das_headfirst_select
-klant_pggm --> das_headfirst_select
+klant_pgb_pensioendiensten --> broker_headfirst
+klant_pggm --> broker_headfirst
+klant_provincie_zuid_holland --> broker_js_consultancy
+klant_rabobank --> broker_headfirst
 klant_rabobank --> broker_magnit
-klant_rabobank --> das_headfirst_select
 klant_rabobank --> state_no_zzp
-klant_rijksinstituut_voor_de_volksgezondheid_en_milieu --> das_headfirst_select
-klant_rijkswaterstaat --> das_headfirst_select
-klant_sociale_verzekeringsbank --> das_headfirst_select
-klant_stedin_netbeheer --> das_headfirst_select
+klant_rijksinstituut_voor_de_volksgezondheid_en_milieu --> broker_headfirst
+klant_rijkswaterstaat --> broker_headfirst
+klant_sociale_verzekeringsbank --> broker_headfirst
+klant_stedin_netbeheer --> broker_headfirst
 klant_tennet --> broker_magnit
-klant_umc_utrecht --> das_headfirst_select
+klant_umc_utrecht --> broker_headfirst
 klant_unilever --> das_unilever_talentpool
-klant_vng_realisatie --> broker_ctm_solution --> das_freep
-broker_magnit --> das_magnit
-klant_kpn --> broker_yacht 
+klant_vattenfall --> broker_headfirst 
+klant_vng_realisatie --> broker_ctm_solution
 
+broker_ctm_solution --> das_freep
+broker_js_consultancy --> das_sentior
+broker_magnit --> das_magnit
+broker_headfirst --> das_headfirst_select
+
+das_headfirst_select --> das_sentior
+
+recruiter_vibe_group --> das_sentior
+recruiter_vibe_group --> das_freelance_nl
 
 %% Links for nodes
-click das_headfirst "https://platform.select.hr/" "https://platform.select.hr/"
-click das_magnit "https://portal.magnitglobal.com/" "https://portal.magnitglobal.com/"
-click das_mercell "https://identity.s2c.mercell.com" "https://identity.s2c.mercell.com"
-click das_negometrix "https://platform.negometrix.com/" "https://platform.negometrix.com/"
-click das_ns "https://inhuur-ns.my.site.com/" "https://inhuur-ns.my.site.com/"
-click das_staffd "https://www.staffd.co/" "https://www.staffd.co/"
-click das_unilever_talentpool "https://unileverfreelancers.talent-pool.com/" "https://unileverfreelancers.talent-pool.com/"
-
+click klant_enexis "https://www.enexis.nl/" "https://www.enexis.nl/"
 click klant_kpn "https://vng.nl/" "https://vng.nl/"
 click klant_mobilis "https://www.mobilis.nl/" "https://www.mobilis.nl/"
 click klant_npo "https://inhuurkaart.nl/detail-info/efd3c2dd/info/" "https://inhuurkaart.nl/detail-info/efd3c2dd/info/"
 click klant_npo "https://inhuurkaart.nl/detail-info/efd3c2dd/info/" "https://inhuurkaart.nl/detail-info/efd3c2dd/info/"
+click klant_provincie_zuid_holland "https://werkenvoor.zuid-holland.nl/" "https://werkenvoor.zuid-holland.nl/"
 click klant_vng_realisatie "https://vng.nl/" "https://vng.nl/"
 
+click das_freelance_nl "https://www.freelance.nl/" "https://www.freelance.nl/"
+click das_headfirst "https://platform.select.hr/" "https://platform.select.hr/"
+click das_magnit "https://portal.magnitglobal.com/" "https://portal.magnitglobal.com/"
+click das_negometrix "https://platform.negometrix.com/" "https://platform.negometrix.com/"
+click das_ns "https://inhuur-ns.my.site.com/" "https://inhuur-ns.my.site.com/"
+click das_sentior "https://sentior.com/" "https://sentior.com/"
+click das_staffd "https://www.staffd.co/" "https://www.staffd.co/"
+click das_unilever_talentpool "https://unileverfreelancers.talent-pool.com/" "https://unileverfreelancers.talent-pool.com/"
+
+click recruiter_vibegruop "https://vibegroup.com/onze-merken/" "https://vibegroup.com/onze-merken/"
+
+click broker_headfirst "https://www.headfirst.nl/zelfstandig-professionals/" "https://www.headfirst.nl/zelfstandig-professionals/"
+click broker_js_consultancy "https://www.jsconsultancy.nl/professionals/interim/" "https://www.jsconsultancy.nl/professionals/interim/"
+click broker_tergos "https://www.tergos.nl/vacatures" "https://www.tergos.nl/vacatures"
 click broker_yacht "https://www.yacht.nl/" "https://www.yacht.nl/"
 ```
