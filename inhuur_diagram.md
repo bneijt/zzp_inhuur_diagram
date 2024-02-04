@@ -38,6 +38,8 @@ klant_vng_realisatie["VNG Realisatie"]
 
 recruiter_citrus_it{{"Citrus IT"}}
 recruiter_vibe_group{{"Vibe group"}}
+recruiter_sevenstars{{"Sevenstars"}}
+recruiter_yellowfriday{{"Yellow Friday"}}
 
 broker_yacht(["Yacht"])
 broker_js_consultancy(["JS Consultancy"])
@@ -54,9 +56,11 @@ das_negometrix(("Negometrix 3"))
 das_ns(("Inhuur NS"))
 das_sentior((Sentior))
 das_staffd((Staffd))
+das_striive(["Striive"])
 das_unilever_talentpool(("Unilever freelancers talent-pool"))
 
 %% Edges: we werken van klant de diepte in.
+klant_belastingdienst_ict --> broker_capgemini
 klant_belastingdienst_ict --> broker_headfirst
 klant_belastingdienst_non_ict --> broker_headfirst
 klant_capgemini_nederland_ --> broker_headfirst
@@ -74,6 +78,7 @@ klant_kpn --> broker_yacht
 klant_kpn --> das_staffd
 klant_ministerie_van_defensie --> broker_headfirst
 klant_ministerie_van_infrastructuur_en_waterstaat --> broker_headfirst
+klant_ministerie_van_justitie_en_veiligheid --> recruiter_sevenstars
 klant_ministerie_van_volksgezondheid_welzijn_en_sport --> broker_headfirst
 klant_mobilis --> broker_magnit
 klant_ndw --> broker_headfirst
@@ -99,6 +104,7 @@ broker_ctm_solution --> das_freep
 broker_js_consultancy --> das_sentior
 broker_magnit --> das_magnit
 broker_headfirst --> das_headfirst_select
+broker_capgemini --> recruiter_yellowfriday
 
 das_headfirst_select --> das_sentior
 
@@ -123,10 +129,12 @@ click das_sentior "https://sentior.com/" "https://sentior.com/"
 click das_staffd "https://www.staffd.co/" "https://www.staffd.co/"
 click das_unilever_talentpool "https://unileverfreelancers.talent-pool.com/" "https://unileverfreelancers.talent-pool.com/"
 
+click recruiter_sevenstars "https://sevenstars.nl/" "https://sevenstars.nl/"
 click recruiter_vibegruop "https://vibegroup.com/onze-merken/" "https://vibegroup.com/onze-merken/"
 
 click broker_headfirst "https://www.headfirst.nl/zelfstandig-professionals/" "https://www.headfirst.nl/zelfstandig-professionals/"
 click broker_js_consultancy "https://www.jsconsultancy.nl/professionals/interim/" "https://www.jsconsultancy.nl/professionals/interim/"
+click broker_magnit "https://magnitglobal.com/nl" "https://magnitglobal.com/nl"
 click broker_tergos "https://www.tergos.nl/vacatures" "https://www.tergos.nl/vacatures"
 click broker_yacht "https://www.yacht.nl/" "https://www.yacht.nl/"
 ```
