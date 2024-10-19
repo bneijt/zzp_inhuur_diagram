@@ -113,9 +113,8 @@ recruiter_vibe_group --> das_freelance_nl
 
 %% Links for nodes
 click klant_enexis "https://www.enexis.nl/" "https://www.enexis.nl/"
-click klant_kpn "https://vng.nl/" "https://vng.nl/"
+click klant_kpn "https://www.kpn.com/" "https://www.kpn.com/"
 click klant_mobilis "https://www.mobilis.nl/" "https://www.mobilis.nl/"
-click klant_npo "https://inhuurkaart.nl/detail-info/efd3c2dd/info/" "https://inhuurkaart.nl/detail-info/efd3c2dd/info/"
 click klant_npo "https://inhuurkaart.nl/detail-info/efd3c2dd/info/" "https://inhuurkaart.nl/detail-info/efd3c2dd/info/"
 click klant_provincie_zuid_holland "https://werkenvoor.zuid-holland.nl/" "https://werkenvoor.zuid-holland.nl/"
 click klant_vng_realisatie "https://vng.nl/" "https://vng.nl/"
